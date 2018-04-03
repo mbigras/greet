@@ -1,0 +1,3 @@
+#!/usr/bin/env ruby
+thing = ARGV[0]
+puts "hello #{thing}"
