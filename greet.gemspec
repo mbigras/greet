@@ -9,4 +9,6 @@ Gem::Specification.new do |s|
   s.files       = ['LICENSE.txt', 'README.md', 'greet']
   s.bindir      = '.'
   s.executables << 'greet'
+
+  s.add_development_dependency 'aruba', '~> 0.14.0'
 end
