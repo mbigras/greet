@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.email       = ['mbigras22@gmail.com']
   s.summary     = 'One kind of greeting'
   s.homepage    = 'https://github.com/mbigras/mbigras'
-  s.files       = Dir['{lib,spec}/**/*'] + ['LICENSE.txt', 'README.md', 'greet']
-  s.bindir      = '.'
+  s.files       = Dir['{exe,features,lib,spec}/**/*'] + ['LICENSE.txt', 'README.md']
+  s.bindir      = 'exe'
   s.executables << 'greet'
 
   s.add_development_dependency 'aruba', '~> 0.14.0'
