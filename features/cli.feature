@@ -7,6 +7,13 @@ Feature: Basic command-line interface
       hello cats
       """
 
+  Scenario: Unhappy path: running without any arguments
+    When I run `greet`
+    Then it should fail matching:
+      """
+      argument is required
+      """
+
   Scenario: Getting help
     When I run `greet --help`
     Then it should pass matching:
@@ -19,11 +26,4 @@ Feature: Basic command-line interface
     Then it should pass matching:
       """
       \d+\.\d+\.\d+
-      """
-
-  Scenario: Running without any arguments
-    When I run `greet`
-    Then it should fail matching:
-      """
-      argument is required
       """
