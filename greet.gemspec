@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ['mbigras22@gmail.com']
   s.summary     = 'One kind of greeting'
   s.homepage    = 'https://github.com/mbigras/mbigras'
-  s.files       = Dir['lib/**/*'] + ['LICENSE.txt', 'README.md', 'greet']
+  s.files       = Dir['{lib,spec}/**/*'] + ['LICENSE.txt', 'README.md', 'greet']
   s.bindir      = '.'
   s.executables << 'greet'
 
