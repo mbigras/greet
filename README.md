@@ -12,5 +12,5 @@ hello cats
 ## Run feature and unit tests
 
 ```
-cucumber --format progress && ruby -I lib spec/*
+rake features && ruby -I lib spec/*
 ```

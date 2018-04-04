@@ -14,4 +14,5 @@ Gem::Specification.new do |s|
   s.executables << 'greet'
 
   s.add_development_dependency 'aruba', '~> 0.14.0'
+  s.add_development_dependency 'rake', '~> 12.3.0'
 end
