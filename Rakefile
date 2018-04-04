@@ -1,13 +1,13 @@
-begin
-  require 'cucumber'
-  require 'cucumber/rake/task'
+require 'cucumber'
+require 'cucumber/rake/task'
+require 'rake/testtask'
 
-  Cucumber::Rake::Task.new(:features) do |t|
-    t.cucumber_opts = "--format progress"
-  end
-rescue LoadError
-  desc 'Cucumber rake task not available'
-  task :features do
-    abort 'Cucumber rake task is not available. Be sure to install cucumber as a gem or plugin'
-  end
+task :default => [:test, :features]
+
+Rake::TestTask.new do |t|
+  t.pattern = "spec/*_spec.rb"
+end
+
+Cucumber::Rake::Task.new(:features) do |t|
+  t.cucumber_opts = "--format progress"
 end

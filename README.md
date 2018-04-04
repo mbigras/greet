@@ -12,5 +12,5 @@ hello cats
 ## Run feature and unit tests
 
 ```
-rake features && ruby -I lib spec/*
+rake
 ```

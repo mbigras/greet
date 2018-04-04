@@ -11,5 +11,9 @@ describe Greet::Greeter do
       thing = 'cat'
       @greeter.greeting(thing).must_equal "hello #{thing}"
     end
+
+    it 'does some other thing' do
+      42.must_equal 42
+    end
   end
 end
